@@ -1,0 +1,25 @@
+<ul>
+  <% @contacts.keys.each do |contact|%>
+  <li><a href="/contact/<%=contact %>"> <%=contact%> </a> </li>
+  <form action="/contact/<%=contact %>/delete"  method="post">
+    <button type="submit"> Delete </button>
+  </form>
+  <form action="contact/<%= contact %>/edit">
+    <button type="submit"> Edit Contact Info </button>
+  </form>
+  <% end %>
+</ul>
+
+<form action="/contact/new" method="get" >
+  <button type="submit"> Add New Contact </button>
+</form> 
+
+<div>
+  <a href="/login"> Click Here to Login </a>
+</div>
+
+<div>
+  <form action="/logout" method="post">
+    <button type="submit">Logout </button>
+  </form>
+</div>

@@ -1,0 +1,7 @@
+
+<%= @contact_name %>
+<% @contacts[@contact_name].each do |contact_info, info_value| %>
+  <div>
+    <%= contact_info %>: <%= info_value %>
+  </div>
+<% end %>

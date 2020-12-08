@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+  <html>
+    <title>Contact List</title>
+    <body>
+      <% if session[:message] %>
+         <%= session.delete(:message) %>
+      <% end %>
+      <%== yield %> 
+    </body>
+  </html>

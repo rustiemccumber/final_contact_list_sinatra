@@ -1,0 +1,25 @@
+
+
+<form action="/contact/<%= @contact_name %>/update" method="post">
+  <div>
+    <label for="first_name"> First name:
+      <input type="text" name="first_name" value="<%= params[:first_name] %>"/>
+    </label>
+  </div>
+  <div>
+    <label for="last_name"> Last name:
+      <input type="text" name="last_name" value="<%= params[:last_name] %>"/>
+    </label>
+  </div>
+  <div>
+    <label for="phone_number"> phone number:
+      <input type="text" name="phone_number" value="<%= params[:phone_number] %>"/>
+    </label>
+  </div>
+  <div>
+    <label for="email"> Email address:
+      <input type="text" name="email" value="<%= params[:email] %>"/>
+    </label>
+  </div>
+  <button type="submit">Update Contact Information</button>
+</form>
